@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Rider\GeoLocation\conf\application.conf,C:\Users\Rider\GeoLocation\target\scala-2.10\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Rider\GeoLocation\conf\evolutions,C:\Users\Rider\GeoLocation\target\scala-2.10\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Rider\GeoLocation\conf\routes,C:\Users\Rider\GeoLocation\target\scala-2.10\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Rider\GeoLocation\conf\evolutions\default,C:\Users\Rider\GeoLocation\target\scala-2.10\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Rider\GeoLocation\conf\evolutions\default\1.sql,C:\Users\Rider\GeoLocation\target\scala-2.10\classes\evolutions\default\1.sql)[0m

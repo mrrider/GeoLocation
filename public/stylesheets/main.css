@@ -1,0 +1,59 @@
+body{
+	background-color: #535353;
+}
+
+.logo{
+	width: 20%;
+	margin: 10% 40% 0 40%;
+}
+
+.wrapper{
+	width: 20%;
+	margin: 1% 40% 0 40%;
+}
+
+.clientIdText, .getLocationButton, .result{
+	width: 100%;
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: 700;
+}
+
+.clientIdText, .result{
+	color: #929497;
+	font-size: 1.2em;
+	display: none;
+}
+
+.getLocationButton{
+	display: none;
+	width: 84%;
+	margin: 5% 8% 0 8%;
+	border-radius: 5px;
+	background-color: #e9e9e9;
+	border: none;
+	cursor: pointer;
+	height: 45px;
+	color: #4f4f4f;
+	font-size: 0.9em;
+}
+
+.getLocationButton:hover{
+	background-color: #cdcdcd;
+	opacity: 0.6;
+}
+
+.result{
+	margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+	.clientIdText, .result{
+		font-size: 0.8em;
+	}
+
+	.getLocationButton{
+		font-size: 0.5em;
+		height: 25px;
+	}
+}

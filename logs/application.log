@@ -1,0 +1,33 @@
+2016-01-07 14:08:08,602 - [INFO] - from play in pool-4-thread-2 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-01-07 14:08:32,609 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/geolocation
+
+2016-01-07 14:08:35,340 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-01-07 14:08:37,151 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/geolocation
+
+2016-01-07 14:08:37,761 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-01-07 14:11:53,357 - [INFO] - from play in play-internal-execution-context-2 
+database [default] connected at jdbc:mysql://localhost/geolocation
+
+2016-01-07 14:11:53,431 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2016-01-07 14:12:36,231 - [INFO] - from play in play-internal-execution-context-2 
+database [default] connected at jdbc:mysql://localhost/geolocation
+
+2016-01-07 14:12:36,304 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2016-01-07 14:13:01,444 - [INFO] - from play in play-internal-execution-context-2 
+database [default] connected at jdbc:mysql://localhost/geolocation
+
+2016-01-07 14:13:01,521 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+

@@ -1,0 +1,59 @@
+@(message: String)
+@import controllers.routes.javascript._
+
+@main("Geolocation") {
+<script>
+	$(document).ready(function() {
+		var myJson;
+		jsRoutes.controllers.Application.getClientIp().ajax({
+				type : "POST",
+				dataType : "json",
+				success : function(data) {
+					if(data.ip == "local" || data.ip == "new"){
+						$.getJSON('http://ipinfo.io', function(data) {
+							myJson = data;
+							$('.clientIdText').html(data.ip);
+							$('.clientIdText').fadeIn('normal');
+							$('.getLocationButton').fadeIn('normal');
+							jsRoutes.controllers.Application.addClient(
+								myJson.ip, myJson.city, myJson.country
+							).ajax({
+								type : "POST",
+								dataType : "text",
+								success : function(data) {
+								},
+								error : function(data) {
+									console.log("err");
+								}
+							});
+						});
+						
+					}
+					else{
+						myJson = data;
+						$('.clientIdText').html(data.ip);
+						$('.clientIdText').fadeIn('normal');
+						$('.getLocationButton').fadeIn('normal');
+					}
+				},
+				error : function(data) {
+					console.log("err");
+				}
+		});
+		
+		$('.getLocationButton').one("click", function() {
+				$('.result').html(myJson.city.toLowerCase() + " - " + myJson.country.toLowerCase());					
+				$('.result').fadeIn('normal');
+				$(this).css("opacity","0.8");
+				$(this).css("background-color","#cdcdcd");
+				$(this).css("cursor","default");
+		});
+	});
+	</script>
+	<img class="logo" src="@routes.Assets.at("images/location.png")">
+	<div class="wrapper">
+		<div class="clientIdText"></div>
+	   	<button class="getLocationButton" value="Get My Location">Get My Location</button>
+	    <div class="result"></div>
+    </div>
+}
